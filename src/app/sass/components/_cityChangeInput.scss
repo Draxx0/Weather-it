@@ -1,0 +1,15 @@
+.input-wrapper {
+ position: relative;
+ width: 100%;
+
+ img {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+ }
+
+ input {
+  width: 100%;
+ }
+}

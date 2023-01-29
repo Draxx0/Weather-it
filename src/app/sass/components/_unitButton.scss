@@ -1,0 +1,41 @@
+.unit-button {
+ .button-wrapper {
+  background-color: $header-color;
+ }
+
+ .button-wrapper,
+ .button-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+
+  &:hover {
+   background-color: $blue;
+
+   .unit {
+    color: $header-color;
+   }
+  }
+
+  .unit {
+   font-size: 1.2rem;
+   font-weight: 600;
+  }
+
+  .unit {
+   color: $black
+  }
+ }
+
+ .button-active {
+  background-color: $blue;
+
+  .unit {
+   color: $header-color;
+  }
+ }
+}

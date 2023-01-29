@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ background-color: $bg-color;
+ font-family: $montserrat;
+}
+
+header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 325px;
+ height: 100vh;
+ background-color: $header-color;
+ padding: 30px;
+}
+
+main {
+ width: 100%;
+ margin: auto auto auto 325px;
+}
+
+.main-content {
+ width: calc(90% - 275px);
+ margin: 40px auto auto 30px;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+input {
+ background-color: rgb(238, 238, 238);
+ outline: none;
+ border-radius: 8px;
+ padding: 15px 10px 15px 40px;
+ border: 2px solid transparent;
+ transition: .3s ease-in-out all;
+
+ &:focus {
+  border: 2px solid $blue;
+ }
+}
+
+input::placeholder {
+ color: #B8B8B8;
+ transition: .3s ease-in-out all;
+}
+
+input:focus::placeholder {
+ color: transparent;
+ transform: translateY(-4px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ color: $black;
+}
+
+.row {
+ display: flex;
+}
+
+.alignCenter {
+ align-items: center;
+}
+
+.spaceBtwn {
+ justify-content: space-between;
+}
+
+.column {
+ flex-direction: column;
+}
+
+.gray {
+ color: $gray;
+}
+
+.active {
+ color: $blue;
+}
+
+/* width */
+::-webkit-scrollbar {
+ width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: $blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #555;
+}
