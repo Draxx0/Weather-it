@@ -8,8 +8,6 @@ const Home = () => {
   const [lat, setLat] = useState(0);
   const [lon, setLon] = useState(0);
   const { weather, setWeather, forecast, setForecast } = useContext(WeatherContext);
-  console.log("weather: ", weather);
-  console.log("forecast: ", forecast);
 
   const getWeatherFunction = async () => {
     const response = await getRealTimeWeather(

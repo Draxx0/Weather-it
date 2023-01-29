@@ -20,7 +20,6 @@ const CityData = () => {
 
   useEffect(() => {
     setCurrentTime(getCurrentTime());
-    console.log(currentTime);
   }, []);
   return (
     <div className="city-data">
