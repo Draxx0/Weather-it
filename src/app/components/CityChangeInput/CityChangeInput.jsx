@@ -12,19 +12,13 @@ const CityChangeInput = () => {
   const handleSubmitCity = async (e) => {
     e.preventDefault();
     try {
-      const reponse = await getRealTimerWeatherByCity(
-        city,
-        process.env.REACT_APP_API_KEY
-      );
+      const reponse = await getRealTimerWeatherByCity(city);
       setWeather(reponse);
-      const forecastResponse = await getForecastWeatherByCity(
-        city,
-        process.env.REACT_APP_API_KEY
-      );
+      const forecastResponse = await getForecastWeatherByCity(city);
       setForecast(forecastResponse);
       setCity("");
     } catch (error) {
-      console.log(error);
+      console.log("error");
     }
   };
   return (
