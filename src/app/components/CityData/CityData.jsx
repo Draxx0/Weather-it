@@ -68,7 +68,11 @@ const CityData = () => {
           </div>
 
           <div className="city-name-container">
-            <img src={currentTime <= 9 || currentTime >= 22 ? Night : DayTime} alt="" className="city-name-img" />
+            <img
+              src={currentTime <= 9 || currentTime >= 20 ? Night : DayTime}
+              alt=""
+              className="city-name-img"
+            />
             <span className="city-name">
               {weather.location.name}, {weather.location.region},{" "}
               {weather.location.country}

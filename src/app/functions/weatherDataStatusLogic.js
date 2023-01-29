@@ -1,7 +1,7 @@
 const airQualityLogic = (co) => {
-  if (co <= 130) {
+  if (co <= 200) {
     return "Bonne";
-  } else if (co >= 131 && co <= 199) {
+  } else if (co >= 201 && co <= 250) {
     return "Moyenne";
   } else return "Mauvaise";
 };
